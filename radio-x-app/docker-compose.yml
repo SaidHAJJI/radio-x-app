@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000" # Port exposé pour l'API Flask
+    volumes:
+      - ./backend:/app
+    env_file:
+      - ./backend/.env
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000" # Port exposé pour l'app React (développement)
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules # Éviter l'écrasement de node_modules par le volume
+    env_file:
+      - ./frontend/.env
+    stdin_open: true # Nécessaire pour create-react-app en mode interactif
+    tty: true
