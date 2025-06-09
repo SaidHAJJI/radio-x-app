@@ -1,0 +1,5 @@
+La lune est le satellite naturel de la Terre.
+Le Python est un langage de programmation populaire.
+Apprendre de nouvelles choses est important pour l'IA.
+Les modèles de langage peuvent être fine-tunés.
+Le soleil est une étoile au centre de notre système solaire.

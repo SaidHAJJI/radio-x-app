@@ -1,0 +1,12 @@
+transformers
+torch
+accelerate
+einops
+chromadb
+langchain
+langchain-community
+langchain-huggingface
+sentence-transformers
+datasets
+peft
+bitsandbytes
